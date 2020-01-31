@@ -1,29 +1,20 @@
-import React, { Component } from "react";
-import NavbarBS from "./components/NavbarBS";
-import Home from "./components/Home";
-import "./App.css";
+import React, { Component } from 'react';
+import NavbarBS from './components/NavbarBS/NavbarBS';
+import Home from './components/Home';
+import './App.css';
 
 class App extends Component {
-  componentDidMount() {
-    window.onscroll = function() {
-      if (window.pageYOffset === 0) {
-        alert("I AM AT THE TOP");
-      }
-    };
-  }
+	render() {
+		return (
+			<div className="App">
+				<NavbarBS />
+				<Home />
 
-  componentWillUnmount() {
-    window.onscroll = null;
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <NavbarBS />[
-        <Home />]
-      </div>
-    );
-  }
+				<h1>dasdasdasdas</h1>
+				<Home />
+			</div>
+		);
+	}
 }
 
 export default App;
