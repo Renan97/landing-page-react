@@ -1,3 +1,15 @@
 .transition {
-	transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+a {
+  color: white !important;
+}
+
+/* cor background do dropdown  */
+.dropdown-menu {
+  background-color: #444444 !important;
+}
+
+.hoverItem:hover {
+  background: #c4c4c4;
 }
